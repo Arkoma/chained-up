@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import LeftRailContainer from './components/LeftRailContainer';
+import './css/App.css';
+import LeftRailContainer from './components/LeftRailContainer/LeftRailContainer';
 
 class App extends Component {
   render() {
