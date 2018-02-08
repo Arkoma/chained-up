@@ -1,0 +1,40 @@
+.left-rail-container {
+  display: flex;
+  box-sizing: border-box;
+  width: 216px;
+  height: 404px;
+  margin: 0px auto;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  justify-content: center;
+  flex-flow: row wrap;
+  float: left;
+}
+.left-rail-container .your-connection-number {
+  font-family: Sans;
+  font-size: 34px;
+  text-align: center;
+  color: #0084bf;
+  padding: 12px;
+  align-self: flex-start;
+}
+.left-rail-container .your-connections-text {
+  font-family: Sans;
+  font-size: 17px;
+  text-align: center;
+  color: black;
+  font-weight: 600;
+}
+.left-rail-container .see-all-btn {
+  font-family: Sans;
+  font-size: 15px;
+  text-align: center;
+  font-weight: 600;
+  color: #0084bf;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}

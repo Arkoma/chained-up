@@ -1,14 +1,12 @@
+@import "mixins";
+
 .left-rail-container {
     display: flex;
     box-sizing: border-box;
     width: 216px;
     height: 404px;
     margin: 0px auto;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.2);
-    padding: 16px;
-    justify-content: center;
-    flex-flow: row wrap;
-    float: left;
+    .bordered();
     .your-connection-number {
         font-family: Sans;
         font-size: 34px;
