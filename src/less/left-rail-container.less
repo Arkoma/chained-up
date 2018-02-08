@@ -7,11 +7,36 @@
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.2);
     padding: 16px;
     justify-content: center;
-    flex-flow: column;
+    flex-flow: row wrap;
+    float: left;
     .your-connection-number {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 3.4rem;
+        font-family: Sans;
+        font-size: 34px;
         text-align: center;
-        color: @blue;
+        color: @Lochmara;
+        padding: 12px;
+        align-self: flex-start;
       }
+    .your-connections-text {
+        font-family: Sans;
+        font-size: 17px;
+        text-align: center;
+        color: black;
+        font-weight: 600;
+    }
+    .see-all-btn {
+        font-family: Sans;
+        font-size: 15px;
+        text-align: center;
+        color: @Lochmara;
+        font-weight: 600;
+        color: @Lochmara;
+    }
 }
+
+a {
+    text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }

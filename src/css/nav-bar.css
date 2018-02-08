@@ -1,0 +1,14 @@
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 52px;
+  width: 100%;
+  margin: 0;
+  padding: 0 30px;
+  font-size: 100%;
+  vertical-align: baseline;
+  background-color: #283E47;
+  border-top: none;
+  box-shadow: none;
+}

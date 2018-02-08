@@ -135,19 +135,93 @@ table {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.2);
   padding: 16px;
   justify-content: center;
-  flex-flow: column;
+  flex-flow: row wrap;
+  float: left;
 }
 .left-rail-container .your-connection-number {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 3.4rem;
+  font-family: Sans;
+  font-size: 34px;
   text-align: center;
   color: #0084bf;
+  padding: 12px;
+  align-self: flex-start;
+}
+.left-rail-container .your-connections-text {
+  font-family: Sans;
+  font-size: 17px;
+  text-align: center;
+  color: black;
+  font-weight: 600;
+}
+.left-rail-container .see-all-btn {
+  font-family: Sans;
+  font-size: 15px;
+  text-align: center;
+  font-weight: 600;
+  color: #0084bf;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
 .App {
-  width: 1128px;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Lucida Grande, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Emoji, Segoe UI Symbol, Hiragino Kaku Gothic Pro, Meiryo, Hiragino Sans GB W3, Noto Naskh Arabic, Droid Arabic Naskh, Geeza Pro, Simplified Arabic, Noto Sans Thai, Thonburi, Dokchampa, Droid Sans Thai, Droid Sans Fallback, '.SFNSDisplay-Regular', Heiti SC, Microsoft Yahei;
+  width: 100%;
   box-sizing: content-box;
   padding: 0 32px;
-  display: bloxk;
+  display: block;
   margin: auto;
   position: relative;
+  color: #f5f5f5;
+}
+.ad-banner-container {
+  width: 1128px;
+  height: 49px;
+  box-sizing: border-box;
+  padding: 16px 0;
+  min-height: 17px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 16px;
+  margin: 52px 0 0 0;
+}
+.ad-banner-container a {
+  color: #0084bf;
+}
+.ad-banner-container .ad-banner-container_text {
+  color: #434649;
+}
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 52px;
+  width: 100%;
+  margin-bottom: 52px;
+  padding: 0 30px;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: #283E47;
+  border-top: none;
+  box-shadow: none;
+}
+.nav-bar img {
+  margin: 8px 0;
+  float: left;
+}
+.nav-bar input {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Lucida Grande, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Emoji, Segoe UI Symbol, Hiragino Kaku Gothic Pro, Meiryo, Hiragino Sans GB W3, Noto Naskh Arabic, Droid Arabic Naskh, Geeza Pro, Simplified Arabic, Noto Sans Thai, Thonburi, Dokchampa, Droid Sans Thai, Droid Sans Fallback, '.SFNSDisplay-Regular', Heiti SC, Microsoft Yahei;
+  font-size: 14px;
+  width: 280px;
+  border: none;
+  border-radius: 2px;
+  background-color: #e1e9ee;
+  padding: 0 8px 0 28px;
+  line-height: 34px;
+  color: #283e4a;
+  font-weight: 400;
+  margin: 8px 30px 8px 8px;
+  float: left;
 }
