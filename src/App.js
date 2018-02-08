@@ -3,6 +3,7 @@ import './css/App.css';
 import LeftRailContainer from './components/LeftRailContainer/LeftRailContainer';
 import AdBannerContainer from './components/AdBannerContainer/AdBannerContainer';
 import NavBar from './components/NavBar/NavBar'
+import CoreRail from './components/CoreRail/CoreRail'
 
 class App extends Component {
   render() {
@@ -11,6 +12,7 @@ class App extends Component {
         <NavBar />
         <AdBannerContainer />
         <LeftRailContainer />
+        <CoreRail />
       </div>
     );
   }
