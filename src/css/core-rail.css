@@ -1,15 +1,31 @@
 .core-rail-container {
   box-sizing: border-box;
   margin-right: -1px;
-  width: 552;
+  width: 552px;
   margin: 0 0 24px 25px;
   line-height: 20px;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.75);
   font-size: 16px;
+  padding: 0px;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.2);
   padding: 16px;
   justify-content: center;
   flex-flow: row wrap;
   float: left;
+}
+.core-rail-container .core-rail-header {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  justify-content: center;
+  flex-flow: row wrap;
+  float: left;
+  width: 100%;
+  padding: 8px;
+  margin: -1px;
+}
+.core-rail-container img {
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
 }

@@ -1,6 +1,8 @@
 import React, { Component} from 'react';
 import linkdInBuds from '../linkdInBuds';
 
+
+
 class CoreRail extends Component {
     state = {linkdInBuds}
     render() {
@@ -11,10 +13,10 @@ class CoreRail extends Component {
                 return (
                 <div key={bud.id} className="core-rail-bud">
                     <img src={bud.avatarUrl} />
-                    <div>{bud.username}</div>
-                    <div>{bud.job}</div>
-                    <div>{bud.connections}</div>
-                    <div>{bud.connectButton}</div>
+                    <div className="core-rail-bud-username">{bud.username}</div>
+                    <div className="core-rail-bud-job">{bud.job}</div>
+                    <div className="core-rail-bud-connections">{bud.connections}</div>
+                    <div className="core-rail-bud-button">{bud.connectButton}</div>
                 </div>
                 )
             })}

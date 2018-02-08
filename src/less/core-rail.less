@@ -4,14 +4,36 @@
     box-sizing: border-box;
     float: left;
     margin-right:-1px;
-    width: 552;
+    width: 552px;
     margin: 0 0 24px 25px;
     line-height: 20px;
     font-weight: 400;
     color: rgba(0,0,0,.75);
     font-size: 16px;
-    .bordered;
+    padding: 0px;
+    flex-flow: row wrap;
+    .bordered(0px);
+    .core-rail-header {
+        .bordered(0px);
+        width: 100%;
+        text-align: center;
+        padding: 8px 0;
+    }
+    img {
+        width: 104px;
+        height: 104px;
+        border-radius: 50%;
+    }
+    .core-rail-bud {
+        width: 33.29%;
+        .bordered(0px);
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        padding: 8px 0;
+    }
 }
+
 
 // <h3 class="mn-pymk-list__header Sans-19px-black-70%-open">
 //     People you may know
