@@ -1,11 +1,7 @@
-import avatar1 from './avatars/avatar1.png'
-import avatar2 from './avatars/avatar2.png'
-import avatar3 from './avatars/avatar3.png'
-
 const linkdInBuds = [
     {
         id:'1',
-        avatarUrl: {avatar1},
+        avatarUrl: '../src/components/avatars/avatar1.png',
         username: 'Jill Upthehill',
         job: 'Piano Tutor',
         connections: 400,
@@ -13,7 +9,7 @@ const linkdInBuds = [
     },
     {
         id:'2',
-        avatarUrl: {avatar2},
+        avatarUrl: '../src/components/avatars/avatar2.png',
         username: 'Jack Hack',
         job: 'React Developer',
         connections: 666,
@@ -21,7 +17,7 @@ const linkdInBuds = [
     },
     {
         id:'3',
-        avatarUrl: {avatar3},
+        avatarUrl: '../src/components/avatars/avatar3.png',
         username: 'Jazzy Jeff',
         job: 'Artist',
         connections: 3,

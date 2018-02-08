@@ -10,7 +10,7 @@ class CoreRail extends Component {
             {this.state.linkdInBuds.map(bud => {
                 return (
                 <div key={bud.id} className="core-rail-bud">
-                    <div>{bud.avatarUrl}</div>
+                    <img src={bud.avatarUrl} />
                     <div>{bud.username}</div>
                     <div>{bud.job}</div>
                     <div>{bud.connections}</div>
