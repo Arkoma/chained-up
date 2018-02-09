@@ -1,34 +1,88 @@
 @import "mixins";
 
-.left-rail-container {
+.lrc {
     display: flex;
     box-sizing: border-box;
     width: 216px;
     height: 404px;
     margin: 0px auto;
+    background: white;
     .bordered();
-    .your-connection-number {
+    flex-direction:column;
+    align-items: center;
+    justify-content: flex-start;
+    .lrc__top {
+        background: white;
+    }
+    .lrc__your-connection-number {
         font-family: Sans;
         font-size: 34px;
         text-align: center;
         color: @Lochmara;
         padding: 12px;
-        align-self: flex-start;
-      }
-    .your-connections-text {
+        background: white;
+        margin-bottom: 12px;
+    }
+    .lrc__your-connections-text {
         font-family: Sans;
         font-size: 17px;
         text-align: center;
         color: black;
         font-weight: 600;
+        background: white;
+        margin-bottom: 12px;
     }
-    .see-all-btn {
+    .lrc__see-all-btn {
         font-family: Sans;
         font-size: 15px;
         text-align: center;
         color: @Lochmara;
         font-weight: 600;
-        color: @Lochmara;
+        background: white;
+        margin-bottom: 80px;
+    }
+    .lrc__small-pics {
+        display: flex;
+        flex-flow: row nowrap;
+        position: relative;
+        .lrc__small-pic-1 {
+            .pic--small;
+            position: absolute;
+            right: 25px;
+            bottom: 25px;
+            border: solid 1px white;
+        }
+        .lrc__small-pic-2 {
+            .pic--small;
+            position: absolute;
+            right: 0px;
+            bottom: 25px;
+            border: solid 1px white;
+        }
+        .lrc__small-pic-3 {
+            .pic--small;
+            position: absolute;
+            right: -25px;
+            bottom: 25px;
+            border: solid 1px white;
+        }
+        .lrc__small-pic-4 {
+            .pic--small;
+            position: absolute;
+            right: -50px;
+            bottom: 25px;
+            border: solid 1px white;
+        }
+    }
+    .lrc__continue-btn {
+        margin: 12px 0;
+        border: solid 1.5px @Lochmara;
+        border-radius: 2px;
+        padding: 8px 36px 8px 36px;
+        &:hover {
+            cursor: default;
+            background: @Lochmara + 75%;
+        }
     }
 }
 

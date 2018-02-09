@@ -1,36 +1,98 @@
-.left-rail-container {
+.lrc {
   display: flex;
   box-sizing: border-box;
   width: 216px;
   height: 404px;
   margin: 0px auto;
+  background: white;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.2);
   padding: 16px;
   justify-content: center;
-  flex-flow: row wrap;
   float: left;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
-.left-rail-container .your-connection-number {
+.lrc .lrc__top {
+  background: white;
+}
+.lrc .lrc__your-connection-number {
   font-family: Sans;
   font-size: 34px;
   text-align: center;
   color: #0084bf;
   padding: 12px;
-  align-self: flex-start;
+  background: white;
+  margin-bottom: 12px;
 }
-.left-rail-container .your-connections-text {
+.lrc .lrc__your-connections-text {
   font-family: Sans;
   font-size: 17px;
   text-align: center;
   color: black;
   font-weight: 600;
+  background: white;
+  margin-bottom: 12px;
 }
-.left-rail-container .see-all-btn {
+.lrc .lrc__see-all-btn {
   font-family: Sans;
   font-size: 15px;
   text-align: center;
-  font-weight: 600;
   color: #0084bf;
+  font-weight: 600;
+  background: white;
+  margin-bottom: 80px;
+}
+.lrc .lrc__small-pics {
+  display: flex;
+  flex-flow: row nowrap;
+  position: relative;
+}
+.lrc .lrc__small-pics .lrc__small-pic-1 {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+  border: solid 1px white;
+}
+.lrc .lrc__small-pics .lrc__small-pic-2 {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  bottom: 25px;
+  border: solid 1px white;
+}
+.lrc .lrc__small-pics .lrc__small-pic-3 {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  position: absolute;
+  right: -25px;
+  bottom: 25px;
+  border: solid 1px white;
+}
+.lrc .lrc__small-pics .lrc__small-pic-4 {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  position: absolute;
+  right: -50px;
+  bottom: 25px;
+  border: solid 1px white;
+}
+.lrc .lrc__continue-btn {
+  margin: 12px 0;
+  border: solid 1.5px #0084bf;
+  border-radius: 2px;
+  padding: 8px 36px 8px 36px;
+}
+.lrc .lrc__continue-btn:hover {
+  cursor: default;
+  background: #4bcfff;
 }
 a {
   text-decoration: none;

@@ -15,7 +15,7 @@ class CoreRail extends Component {
                     <img src={bud.avatarUrl} />
                     <div className="core-rail-bud-username">{bud.username}</div>
                     <div className="core-rail-bud-job">{bud.job}</div>
-                    <div className="core-rail-bud-connections">Connections: {bud.connections}</div>
+                    <div className="core-rail-bud-connections">&#128279; {bud.connections}</div>
                     <div className="core-rail-bud-button">{bud.connectButton}</div>
                 </div>
                 )

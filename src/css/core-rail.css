@@ -7,25 +7,52 @@
   font-weight: 400;
   color: rgba(0, 0, 0, 0.75);
   font-size: 16px;
-  padding: 0px;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  justify-content: center;
   flex-flow: row wrap;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.2);
+  padding: 0px;
+  justify-content: center;
   float: left;
 }
 .core-rail-container .core-rail-header {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.2);
-  padding: 16px;
+  padding: 0px;
   justify-content: center;
-  flex-flow: row wrap;
   float: left;
   width: 100%;
-  padding: 8px;
-  margin: -1px;
+  text-align: center;
+  padding: 8px 0;
 }
 .core-rail-container img {
   width: 104px;
   height: 104px;
   border-radius: 50%;
+  padding: 8px;
+}
+.core-rail-container .core-rail-bud {
+  width: 33.29%;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.2);
+  padding: 0px;
+  justify-content: center;
+  float: left;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: 8px 0;
+  min-height: 216px;
+}
+.core-rail-container .core-rail-bud .core-rail-bud-username {
+  font-size: 15px;
+  font-weight: 600;
+}
+.core-rail-container .core-rail-bud .core-rail-bud-job {
+  font-size: 13px;
+  font-weight: lighter;
+  color: gray;
+}
+.core-rail-container .core-rail-bud .core-rail-bud-connections {
+  text-align: center;
+  font-size: 13px;
+  font-weight: lighter;
+  color: gray;
+  padding: 8px;
 }

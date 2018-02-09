@@ -89,6 +89,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  background: #f5f5f5;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -126,39 +127,101 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.left-rail-container {
+.lrc {
   display: flex;
   box-sizing: border-box;
   width: 216px;
   height: 404px;
   margin: 0px auto;
+  background: white;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.2);
   padding: 16px;
   justify-content: center;
-  flex-flow: row wrap;
   float: left;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
-.left-rail-container .your-connection-number {
+.lrc .lrc__top {
+  background: white;
+}
+.lrc .lrc__your-connection-number {
   font-family: Sans;
   font-size: 34px;
   text-align: center;
   color: #0084bf;
   padding: 12px;
-  align-self: flex-start;
+  background: white;
+  margin-bottom: 12px;
 }
-.left-rail-container .your-connections-text {
+.lrc .lrc__your-connections-text {
   font-family: Sans;
   font-size: 17px;
   text-align: center;
   color: black;
   font-weight: 600;
+  background: white;
+  margin-bottom: 12px;
 }
-.left-rail-container .see-all-btn {
+.lrc .lrc__see-all-btn {
   font-family: Sans;
   font-size: 15px;
   text-align: center;
-  font-weight: 600;
   color: #0084bf;
+  font-weight: 600;
+  background: white;
+  margin-bottom: 80px;
+}
+.lrc .lrc__small-pics {
+  display: flex;
+  flex-flow: row nowrap;
+  position: relative;
+}
+.lrc .lrc__small-pics .lrc__small-pic-1 {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+  border: solid 1px white;
+}
+.lrc .lrc__small-pics .lrc__small-pic-2 {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  bottom: 25px;
+  border: solid 1px white;
+}
+.lrc .lrc__small-pics .lrc__small-pic-3 {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  position: absolute;
+  right: -25px;
+  bottom: 25px;
+  border: solid 1px white;
+}
+.lrc .lrc__small-pics .lrc__small-pic-4 {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  position: absolute;
+  right: -50px;
+  bottom: 25px;
+  border: solid 1px white;
+}
+.lrc .lrc__continue-btn {
+  margin: 12px 0;
+  border: solid 1.5px #0084bf;
+  border-radius: 2px;
+  padding: 8px 36px 8px 36px;
+}
+.lrc .lrc__continue-btn:hover {
+  cursor: default;
+  background: #4bcfff;
 }
 a {
   text-decoration: none;
@@ -169,12 +232,12 @@ a:hover {
 .App {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Lucida Grande, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Emoji, Segoe UI Symbol, Hiragino Kaku Gothic Pro, Meiryo, Hiragino Sans GB W3, Noto Naskh Arabic, Droid Arabic Naskh, Geeza Pro, Simplified Arabic, Noto Sans Thai, Thonburi, Dokchampa, Droid Sans Thai, Droid Sans Fallback, '.SFNSDisplay-Regular', Heiti SC, Microsoft Yahei;
   width: 100%;
-  box-sizing: content-box;
+  box-sizing: border-box;
   padding: 0 32px;
   display: block;
   margin: auto;
   position: relative;
-  color: #f5f5f5;
+  background: #f5f5f5;
 }
 .ad-banner-container {
   width: 1128px;
@@ -234,36 +297,78 @@ a:hover {
   font-weight: 400;
   color: rgba(0, 0, 0, 0.75);
   font-size: 16px;
+  flex-flow: row wrap;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.2);
   padding: 0px;
   justify-content: center;
-  flex-flow: row wrap;
   float: left;
 }
 .core-rail-container .core-rail-header {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.2);
   padding: 0px;
   justify-content: center;
-  flex-flow: row wrap;
   float: left;
   width: 100%;
   text-align: center;
   padding: 8px 0;
+  background: white;
 }
 .core-rail-container img {
   width: 104px;
   height: 104px;
   border-radius: 50%;
+  padding: 8px;
+  background: 0%;
+}
+.core-rail-container img:hover {
+  cursor: default;
+  background: #ebebeb;
 }
 .core-rail-container .core-rail-bud {
   width: 33.29%;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.2);
   padding: 0px;
   justify-content: center;
-  flex-flow: row wrap;
   float: left;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   padding: 8px 0;
+  min-height: 216px;
+  background: white;
+}
+.core-rail-container .core-rail-bud .core-rail-bud-username {
+  font-size: 15px;
+  font-weight: 600;
+  background: 0%;
+}
+.core-rail-container .core-rail-bud .core-rail-bud-job {
+  font-size: 13px;
+  font-weight: lighter;
+  color: gray;
+  background: 0%;
+}
+.core-rail-container .core-rail-bud .core-rail-bud-connections {
+  text-align: center;
+  font-size: 13px;
+  font-weight: lighter;
+  color: gray;
+  padding: 8px;
+  background: 0%;
+}
+.core-rail-container .core-rail-bud .core-rail-bud-button {
+  margin: 12px 0;
+  border: solid 1.5px #0084bf;
+  border-radius: 2px;
+  padding: 4px 12px;
+  width: 50%;
+  text-align: center;
+}
+.core-rail-container .core-rail-bud .core-rail-bud-button:hover {
+  cursor: default;
+  background: #4bcfff;
+}
+.core-rail-container .core-rail-bud:hover {
+  cursor: default;
+  background: #ebebeb;
 }
