@@ -385,3 +385,6 @@ a:hover {
   font-weight: 900;
   background: #ebebeb;
 }
+.core-rail-container .core-rail-bud:hover .delete-button:hover {
+  cursor: pointer;
+}

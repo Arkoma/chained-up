@@ -56,14 +56,6 @@
 .core-rail-container .core-rail-bud .delete-button {
   display: none;
 }
-.core-rail-container .core-rail-bud .delete-button:hover {
-  display: flex;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  color: black;
-  font-weight: 900;
-}
 .core-rail-container .core-rail-bud .core-rail-bud-job {
   font-size: 13px;
   font-weight: lighter;
@@ -93,4 +85,16 @@
 .core-rail-container .core-rail-bud:hover {
   cursor: default;
   background: #ebebeb;
+}
+.core-rail-container .core-rail-bud:hover .delete-button {
+  display: flex;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  color: black;
+  font-weight: 900;
+  background: #ebebeb;
+}
+.core-rail-container .core-rail-bud:hover .delete-button:hover {
+  cursor: pointer;
 }
