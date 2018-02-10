@@ -12,7 +12,7 @@ class CoreRail extends Component {
             {this.state.linkdInBuds.map(bud => {
                 return (
                 <div key={bud.id} className="core-rail-bud">
-                    <div className="delete-button" onClick={ () => {this._deleteClickHandler(bud.username)}}>X</div>
+                    <div className="delete-button" onClick={ () => {this._deleteClickHandler(bud.id)}}>X</div>
                     <img src={bud.avatarUrl} />
                     <div className="core-rail-bud-username">{bud.username}</div>
                     <div className="core-rail-bud-job">{bud.job}</div>
@@ -24,9 +24,9 @@ class CoreRail extends Component {
         </div>
       );
     }
-    _deleteClickHandler = name => {
+    _deleteClickHandler = id => {
         let temp = this.state.linkdInBuds.filter(element => {
-            if (element.username !== name) return {...element}
+            if (element.id !== id) return {...element}
         })
         this.setState({linkdInBuds: temp});
     }
