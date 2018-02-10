@@ -335,12 +335,16 @@ a:hover {
   align-items: center;
   padding: 8px 0;
   min-height: 216px;
+  position: relative;
   background: white;
 }
 .core-rail-container .core-rail-bud .core-rail-bud-username {
   font-size: 15px;
   font-weight: 600;
   background: 0%;
+}
+.core-rail-container .core-rail-bud .delete-button {
+  display: none;
 }
 .core-rail-container .core-rail-bud .core-rail-bud-job {
   font-size: 13px;
@@ -370,5 +374,14 @@ a:hover {
 }
 .core-rail-container .core-rail-bud:hover {
   cursor: default;
+  background: #ebebeb;
+}
+.core-rail-container .core-rail-bud:hover .delete-button {
+  display: flex;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  color: black;
+  font-weight: 900;
   background: #ebebeb;
 }

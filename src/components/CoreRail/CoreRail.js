@@ -12,17 +12,31 @@ class CoreRail extends Component {
             {this.state.linkdInBuds.map(bud => {
                 return (
                 <div key={bud.id} className="core-rail-bud">
+                    <div className="delete-button" onClick={ () => {this._deleteClickHandler(bud.username)}}>X</div>
                     <img src={bud.avatarUrl} />
                     <div className="core-rail-bud-username">{bud.username}</div>
                     <div className="core-rail-bud-job">{bud.job}</div>
                     <div className="core-rail-bud-connections">&#128279; {bud.connections}</div>
-                    <div className="core-rail-bud-button">{bud.connectButton}</div>
+                    <div className="core-rail-bud-button" onClick={ () => {this._connectClickHandler(bud.id)}}>{bud.connectButton}</div>
                 </div>
                 )
             })}
         </div>
       );
-  }
+    }
+    _deleteClickHandler = name => {
+        let temp = this.state.linkdInBuds.filter(element => {
+            if (element.username !== name) return {...element}
+        })
+        this.setState({linkdInBuds: temp});
+    }
+    _connectClickHandler = id => {
+        let temp = this.state.linkdInBuds.map(element => {
+            if (element.id === id) return {...element, connectButton: "Connected" }
+            else return {...element}
+        })
+        this.setState({linkdInBuds: temp});
+    }
 }
   
 export default CoreRail;
